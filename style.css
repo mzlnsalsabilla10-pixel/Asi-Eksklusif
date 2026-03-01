@@ -95,23 +95,33 @@ box-shadow:0 4px 12px rgba(196,54,112,0.25);
 
 .hero{
 
-height:100vh;
+min-height:100vh;
+
 width:100%;
 
 background-image:url("ibu-hamil.png");
+
 background-size:cover;
-background-position:center;
+
+background-position:center right;
+
 background-repeat:no-repeat;
 
 display:flex;
+
 align-items:center;
 
 position:relative;
+
 }
+
+
+/* OVERLAY supaya teks terbaca */
 
 .hero::before{
 
 content:"";
+
 position:absolute;
 
 top:0;
@@ -127,31 +137,50 @@ rgba(255,255,255,0.6) 60%,
 rgba(255,255,255,0.2) 100%
 );
 
+z-index:1;
+
 }
+
+
+/* CONTENT */
 
 .hero-content{
 
 position:relative;
+
 z-index:2;
 
 max-width:600px;
+
 padding:40px;
+
 }
+
+
+/* TITLE */
 
 .hero-content h1{
 
 font-size:56px;
+
 color:#C43670;
+
 margin-bottom:20px;
+
 }
+
+
+/* TEXT */
 
 .hero-content p{
 
 font-size:20px;
-line-height:1.6;
-margin-bottom:30px;
-}
 
+line-height:1.6;
+
+margin-bottom:30px;
+
+}
 
 
 /* ================= BUTTON ================= */
@@ -196,22 +225,16 @@ min-height:100vh;
 
 .menu-section{
 
-padding:60px 60px;
+padding:60px;
+
 text-align:center;
-}
 
-.menu-section h2{
+max-width:1200px;
 
-color:#C43670;
-font-size:34px;
-margin-bottom:10px;
-}
+margin:auto;
 
-.menu-subtitle{
+box-sizing:border-box;
 
-color:#666;
-font-size:16px;
-margin-bottom:30px;
 }
 
 
@@ -227,30 +250,30 @@ grid-template-columns:repeat(4,1fr);
 gap:25px;
 
 margin-top:30px;
-}
 
+box-sizing:border-box;
+
+}
 
 
 /* ================= BOX ================= */
-
-.menu-link{
-text-decoration:none;
-color:inherit;
-display:block;
-}
 
 .menu-box{
 
 background:white;
 
-padding:25px;
+padding:20px;
 
 border-radius:20px;
 
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 
 transition:0.25s;
+
 height:100%;
+
+box-sizing:border-box;
+
 }
 
 .menu-box:hover{
@@ -258,8 +281,8 @@ height:100%;
 transform:translateY(-6px);
 
 box-shadow:0 18px 40px rgba(0,0,0,0.15);
-}
 
+}
 
 
 /* ================= BOX IMAGE ================= */
@@ -344,67 +367,57 @@ margin-top:40px;
 
 
 
-/* ================================================= */
-/* ================= RESPONSIVE ==================== */
-/* ================================================= */
+/* ================= RESPONSIVE ================= */
 
 
-/* TABLET */
+/* ================= TABLET ================= */
 
 @media(max-width:1024px){
 
-.menu-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
 .menu-section{
 
-padding:50px 30px;
+padding:40px 25px;
 
 }
-
-}
-
-
-/* HP */
-
-@media(max-width:600px){
 
 .menu-grid{
 
 grid-template-columns:repeat(2,1fr);
 
-gap:15px;
+gap:20px;
 
 }
 
-.menu-section{
+}
 
-padding:40px 15px;
+
+/* ================= HP ================= */
+
+@media(max-width:768px){
+
+.hero{
+
+background-position:center;
+
+padding:20px;
 
 }
 
-.menu-box{
+.hero-content{
 
-padding:18px;
+padding:20px;
 
-}
-
-.menu-box img{
-
-height:140px;
+max-width:100%;
 
 }
 
-.navbar{
+.hero-content h1{
 
-padding:12px 15px;
+font-size:34px;
 
 }
 
-.nav-title{
+.hero-content p{
 
 font-size:16px;
 
@@ -413,13 +426,36 @@ font-size:16px;
 }
 
 
-/* HP sangat kecil */
+/* ================= HP KECIL ================= */
 
-@media(max-width:400px){
+@media(max-width:480px){
+
+.menu-section{
+
+padding:25px 15px;
+
+}
+
+.menu-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:14px;
+
+}
+
+}
+
+
+/* ================= HP SANGAT KECIL ================= */
+
+@media(max-width:360px){
 
 .menu-grid{
 
 grid-template-columns:1fr;
+
+gap:15px;
 
 }
 
