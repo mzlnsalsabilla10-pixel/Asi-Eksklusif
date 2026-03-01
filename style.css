@@ -461,6 +461,29 @@ gap:15px;
 
 }
 
+/* ================= FIX HERO MOBILE (TAMBAHAN SAJA, JANGAN HAPUS YANG LAMA) ================= */
+
+@media(max-width:768px){
+
+.hero{
+
+min-height:auto;
+
+height:auto;
+
+padding-top:80px;
+padding-bottom:80px;
+
+background-size:contain;
+
+background-position:center bottom;
+
+background-repeat:no-repeat;
+
+}
+
+}
+
 /* ================= BUTTON kembali pengertian ================= */ 
 .pengertian-btn{ 
 margin-top:15px; 
