@@ -7,6 +7,418 @@ background:#FBF4EB;
 }
 
 
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 40px;
+
+background:white;
+
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+
+/* LEFT SIDE */
+
+.nav-left{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.nav-logo{
+width:50px;
+height:50px;
+object-fit:contain;
+}
+
+.nav-title{
+font-weight:700;
+color:#C43670;
+font-size:18px;
+}
+
+.nav-sub{
+font-size:13px;
+color:#777;
+}
+
+
+/* RIGHT MENU */
+
+.nav-menu{
+display:flex;
+align-items:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.nav-menu a{
+text-decoration:none;
+color:#444;
+font-weight:500;
+padding:10px 18px;
+border-radius:20px;
+transition:0.25s;
+}
+
+
+/* HOVER */
+
+.nav-menu a:hover{
+background:#FBD9E5;
+color:#C43670;
+}
+
+
+/* ACTIVE PAGE */
+
+.nav-menu a.active{
+background:linear-gradient(135deg,#F283AF,#C43670);
+color:white;
+font-weight:600;
+box-shadow:0 4px 12px rgba(196,54,112,0.25);
+}
+
+
+
+/* ================= HERO ================= */
+
+.hero{
+min-height:100vh;
+width:100%;
+
+background-image:url("ibu-hamil.png");
+background-size:contain;
+background-position:bottom right;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+position:relative;
+
+padding:60px 40px;
+box-sizing:border-box;
+}
+
+
+/* OVERLAY supaya teks terbaca */
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:linear-gradient(
+to right,
+rgba(255,255,255,0.92) 35%,
+rgba(255,255,255,0.6) 60%,
+rgba(255,255,255,0.2) 100%
+);
+
+z-index:1;
+
+}
+
+
+/* CONTENT */
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:600px;
+
+padding:40px;
+
+}
+
+
+/* TITLE */
+
+.hero-content h1{
+
+font-size:56px;
+
+color:#C43670;
+
+margin-bottom:20px;
+
+}
+
+
+/* TEXT */
+
+.hero-content p{
+
+font-size:20px;
+
+line-height:1.6;
+
+margin-bottom:30px;
+
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn{
+
+padding:15px 40px;
+
+border:none;
+border-radius:30px;
+
+background:linear-gradient(135deg,#F283AF,#C43670);
+
+color:white;
+
+font-size:18px;
+font-weight:600;
+
+cursor:pointer;
+
+transition:0.25s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+
+
+/* ================= BERANDA PAGE ================= */
+
+.beranda-page{
+
+background: linear-gradient(to bottom,#FBD9E5,#FBF4EB);
+
+min-height:100vh;
+}
+
+
+
+/* ================= MENU SECTION ================= */
+
+.menu-section{
+
+padding:60px;
+
+text-align:center;
+
+max-width:1200px;
+
+margin:auto;
+
+box-sizing:border-box;
+
+}
+
+
+
+/* ================= GRID ================= */
+
+.menu-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:40px;
+
+margin-top:30px;
+
+box-sizing:border-box;
+
+}
+
+
+/* ================= BOX ================= */
+
+.menu-box{
+
+background:white;
+
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+transition:0.25s;
+
+height:100%;
+
+box-sizing:border-box;
+
+}
+
+.menu-box:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 18px 40px rgba(0,0,0,0.15);
+
+}
+
+
+/* ================= BOX IMAGE ================= */
+
+.menu-box img{
+
+width:100%;
+height:180px;
+
+object-fit:contain;
+
+margin-bottom:15px;
+}
+
+
+
+/* ================= BOX TEXT ================= */
+
+.menu-box h3{
+
+color:#C43670;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.menu-box p{
+
+font-size:14px;
+color:#555;
+}
+
+
+
+/* ================= BUTTON SELENGKAPNYA ================= */
+
+.menu-btn{
+
+display:inline-block;
+text-decoration:none;
+
+margin-top:15px;
+padding:10px 22px;
+
+border-radius:20px;
+
+background:linear-gradient(135deg,#F283AF,#C43670);
+color:white;
+
+font-size:14px;
+font-weight:600;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+text-align:center;
+
+padding:25px;
+
+color:#666;
+
+font-size:15px;
+
+margin-top:40px;
+}
+
+
+
+/* ================= FIX KHUSUS HP ================= */
+
+@media(max-width:768px){
+
+.hero{
+
+min-height:auto;
+padding:60px 20px 180px 20px;
+
+background-size:280px;
+background-position:bottom center;
+
+}
+
+.hero::before{
+
+background:linear-gradient(
+to bottom,
+rgba(255,255,255,0.95) 0%,
+rgba(255,255,255,0.9) 60%,
+rgba(255,255,255,0.85) 100%
+);
+
+}
+
+.hero-content{
+
+text-align:center;
+padding:0;
+
+}
+
+.hero-content h1{
+
+font-size:32px;
+line-height:1.3;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+
+}
+
+}
+
+
+/* HP sangat kecil */
+
+@media(max-width:480px){
+
+.hero{
+
+padding-bottom:220px;
+background-size:240px;
+
+}
+
+}
+
+/* ================= RESET ================= */
+
+body{
+margin:0;
+font-family:'Segoe UI', sans-serif;
+background:#FBF4EB;
+}
+
+
 /* ================= NAVBAR ================= */
 
 .navbar{
