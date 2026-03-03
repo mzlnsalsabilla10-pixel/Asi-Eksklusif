@@ -96,23 +96,21 @@ color:#555;
 /* ================= VIDEO STYLE ================= */
 
 .video-wrapper{
-position:relative;
-padding-bottom:56.25%; /* 16:9 ratio */
-height:0;
-overflow:hidden;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(196,54,112,0.15);
-background:#000;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top:40px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
 
-.video-wrapper video{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-object-fit:cover;
-border-radius:15px;
+.video-wrapper iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -161,10 +159,13 @@ font-size:26px;
 <h1>Video Edukasi tentang Pentingnya ASI Eksklusif</h1>
 
 <div class="video-wrapper">
-<video controls>
-<source src="video.mp4" type="video/mp4">
-Browser Anda tidak mendukung pemutaran video.
-</video>
+<iframe 
+    src="https://www.youtube.com/embed/SmkrEJueGGA" 
+    title="Video Edukasi ASI Eksklusif"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
 </div>
 
 </div>
