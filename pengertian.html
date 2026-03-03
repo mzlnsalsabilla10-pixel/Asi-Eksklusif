@@ -17,6 +17,56 @@ color:#333;
 line-height:1.85;
 }
 
+/* ================== TOP BAR ================== */
+
+.topbar{
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-area img{
+width:45px;
+height:45px;
+object-fit:contain;
+}
+
+.instansi{
+font-weight:bold;
+font-size:16px;
+color:#B03060;
+}
+
+.back-home{
+text-decoration:none;
+color:#B03060;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:8px;
+transition:0.3s;
+}
+
+.back-home:hover{
+opacity:0.7;
+}
+
+.back-home span{
+font-size:18px;
+}
+  
 .container{
 max-width:850px;
 margin:auto;
@@ -124,6 +174,19 @@ font-size:16px;
 </head>
 <body>
 
+<!-- ================== TOP BAR ================== -->
+
+<div class="topbar">
+<div class="logo-area">
+<img src="logo.png" alt="Logo Instansi">
+<div class="instansi">Puskesmas Singosari</div>
+</div>
+
+<a href="beranda.html" class="back-home">
+<span>←</span> Kembali ke Beranda
+</a>
+</div>
+  
 <div class="container">
 
 <h1>AIR SUSU IBU</h1>
@@ -140,66 +203,69 @@ ASI mengandung cukup lemak, protein, karbohidrat, serta beragam mineral dan vita
 
 <h2>Pentingnya Inisiasi Menyusu Dini (IMD)</h2>
 
+<h2>Pentingnya Inisiasi Menyusu Dini (IMD)</h2>
+
 <div class="highlight-box">
-
 <p>
-Inisiasi Menyusu Dini (IMD) adalah proses menyusu dimulai segera setelah lahir. IMD dilakukan dengan cara kontak kulit ke kulit antara bayi dengan ibunya segera dalam waktu satu jam setelah kelahiran dan berlangsung minimal satu jam.
+Inisiasi Menyusu Dini (IMD) adalah proses menyusu dimulai segera setelah lahir. IMD dilakukan dengan cara kontak kulit ke kulit antara bayi dengan ibunya segera dalam waktu 1 (satu) jam setelah kelahiran dan berlangsung minimal 1 (satu) jam. IMD dilakukan pada ibu dan bayi dengan kondisi stabil sejak proses persalinan.
 </p>
 
 <p>
-IMD dilakukan pada ibu dan bayi dengan kondisi stabil sejak proses persalinan. IMD memberikan manfaat baik bagi bayi maupun ibu.
+IMD memberikan manfaat baik bagi bayi maupun ibu. Manfaat IMD bagi ibu dapat mencegah perdarahan pasca persalinan, memberikan ketenangan dan kenyamanan, dan membuat ikatan (bonding) ibu terhadap bayi. Melalui IMD bayi akan mendapatkan bakteri baik dari kulit ibu ke bayi, membuat pernapasan dan detak jantung bayi lebih stabil, mendapatkan kolostrum, menghangatkan bayi, dan membuat ikatan (bonding) bayi terhadap ibu.
 </p>
-
 </div>
-
-<p><strong>Manfaat IMD bagi Ibu:</strong></p>
-<ul>
-<li>Mencegah perdarahan pasca persalinan.</li>
-<li>Memberikan ketenangan dan kenyamanan.</li>
-<li>Membangun ikatan (bonding) ibu terhadap bayi.</li>
-</ul>
-
-<p><strong>Manfaat IMD bagi Bayi:</strong></p>
-<ul>
-<li>Mendapatkan bakteri baik dari kulit ibu.</li>
-<li>Membantu pernapasan dan detak jantung lebih stabil.</li>
-<li>Mendapatkan kolostrum sebagai imunisasi pertama.</li>
-<li>Menghangatkan tubuh bayi secara alami.</li>
-<li>Membangun ikatan emosional dengan ibu.</li>
-</ul>
-
 
 <h2>Mengapa ASI Eksklusif Selama 6 Bulan?</h2>
 
 <p>
-Pemberian ASI Eksklusif adalah pemberian ASI saja tanpa makanan atau minuman lain, kecuali vitamin, mineral atau obat-obatan dalam bentuk sirup sejak bayi lahir hingga usia 6 bulan (WHO, 2003).
-</p>
-
-<p>
-Menyusui memberikan manfaat baik bagi bayi, ibu maupun keluarga.
+Pemberian ASI Eksklusif adalah pemberian ASI saja tanpa makanan atau minuman lain, kecuali vitamin, mineral atau obat-obatan dalam bentuk sirup sejak bayi lahir hingga usia 6 bulan (WHO, 2003). Menyusui memberikan manfaat baik bagi bayi, ibu maupun keluarga.
 </p>
 
 <p><strong>Manfaat ASI bagi Bayi:</strong></p>
 
 <ul>
-<li>
-Memenuhi semua kebutuhan nutrisi bayi. ASI mudah dicerna dan diserap secara efisien karena mengandung protein whey yang mudah diserap dan kasein dalam jumlah sedikit.
-</li>
+<li>Memenuhi semua kebutuhan nutrisi bayi. ASI mudah dicerna dan diserap secara efisien karena mengandung protein whey yang mudah diserap dan kasein dalam jumlah sedikit.</li>
 
-<li>
-Meningkatkan daya tahan tubuh bayi. ASI mengandung zat kekebalan yang melindungi bayi dari infeksi bakteri, virus, parasit, dan jamur.
-</li>
+<li>Meningkatkan daya tahan tubuh bayi. ASI mengandung zat kekebalan yang akan melindungi bayi dari berbagai penyakit infeksi bakteri, virus, parasit, dan jamur.</li>
 
-<li>
-Mengupayakan pertumbuhan yang optimal. Bayi yang mendapat ASI mempunyai kenaikan berat badan yang baik dan mengurangi risiko obesitas.
-</li>
+<li>Mengupayakan pertumbuhan yang optimal. Bayi yang mendapat ASI mempunyai kenaikan berat badan yang baik dan mengurangi resiko obesitas. Frekuensi menyusu yang sering (tidak dibatasi) juga dibuktikan bermanfaat karena volume ASI yang dihasilkan lebih banyak sehingga penurunan berat badan bayi hanya sedikit.</li>
 
-<li>
-Meningkatkan ikatan (bonding) dengan ibu. Kontak kulit saat menyusui memberikan rasa aman dan nyaman serta membangun dasar kepercayaan bayi.
-</li>
-
+<li>Meningkatkan ikatan (bonding) dengan ibu. Kontak kulit saat menyusui berpengaruh terhadap perkembangan bayi. Interaksi yang timbul waktu proses menyusui antara ibu dan bayi menimbulkan rasa aman dan nyaman. Perasaan aman sangat penting untuk membangun dasar kepercayaan bayi (basic sense of trust).</li>
 </ul>
 
+<p><strong>Manfaat Menyusui bagi Ibu:</strong></p>
+
+ <ul>
+<li>Mempercepat proses rahim kembali ke ukuran semula melalui kontraksi alami saat menyusui.</li>
+
+<li>Mencegah perdarahan pasca persalinan dan meminimalkan kejadian anemia pada ibu menyusui melalui hormon oksitosin.</li>
+
+<li>Membantu mengatur jarak kehamilan melalui Metode Amenorrhea Laktasi (MAL) dengan syarat tertentu.</li>
+
+<li>Memudahkan ibu karena ASI tersedia pada suhu yang tepat untuk bayi.</li>
+
+<li>Meningkatkan ikatan (bonding) dengan bayi.</li>
+</ul> 
+
+ <h2>Setelah 6 Bulan, Lanjutkan dengan MP ASI</h2>
+
+<p>
+Pemberian MP ASI (Complementary Feeding) adalah proses pemberian makanan dan cairan lainnya yang diberikan kepada bayi mulai usia 6 bulan ketika ASI saja tidak lagi mencukupi untuk memenuhi kebutuhan gizinya. MP ASI adalah makanan dan cairan lainnya selain ASI.
+</p>
+
+<p>
+Ketika memasuki usia 6 bulan, bayi mampu duduk dengan ditopang, kemampuan oromotorik sudah baik, saluran pencernaannya sudah siap menerima makanan padat dan bayi sudah tertarik pada makanan. ASI tetap diberikan semau bayi dengan memperhatikan asupan MPASI.
+</p>
+
+
+<h2>ASI adalah Investasi Kesehatan</h2>
+
+<p>
+Setiap tetes ASI adalah investasi terbaik untuk kesehatan dan masa depan bayi. Oleh karena itu, keberhasilan menyusui tidak hanya menjadi tanggung jawab ibu. Dukungan dari keluarga, tenaga kesehatan, tempat kerja, dan masyarakat sangat menentukan keberhasilan pemberian ASI, baik secara eksklusif selama enam bulan pertama kehidupan, maupun dilanjutkan hingga usia dua tahun atau lebih dengan makanan pendamping ASI (MP-ASI) yang adekuat.
+</p>
+
+<p><strong>ASI bukan hanya makanan, tapi juga investasi kesehatan untuk masa depan anak. Yuk, dukung ibu menyusui!</strong></p> 
+  
 </div>
 
 <footer>
@@ -208,5 +274,6 @@ Meningkatkan ikatan (bonding) dengan ibu. Kontak kulit saat menyusui memberikan 
 
 </body>
 </html>
+
 
 
