@@ -3,66 +3,330 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pola Makan Ibu</title>
-<link rel="stylesheet" href="style.css">
+<title>Pola Makan & Menu Sehat</title>
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+body{
+margin:0;
+font-family:'Georgia', serif;
+background:#FAF7F9;
+color:#333;
+line-height:1.9;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar{
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-area img{
+width:45px;
+height:45px;
+}
+
+.instansi{
+font-weight:700;
+font-size:18px;
+color:#C43670;
+}
+
+.subinstansi{
+font-size:13px;
+color:#777;
+}  
+
+.back-home{
+text-decoration:none;
+color:#B03060;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:8px;
+transition:0.3s;
+}
+
+.back-home:hover{
+opacity:0.7;
+}
+
+/* ================= TYPOGRAPHY ================= */
+
+/* Drop cap */
+.dropcap::first-letter{
+float:left;
+font-size:60px;
+line-height:45px;
+padding-right:10px;
+color:#B03060;
+font-weight:bold;
+}
+
+h1{
+font-size:40px;
+color:#B03060;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:22px;
+color:#555;
+margin-bottom:40px;
+}
+
+h2{
+font-size:28px;
+color:#B03060;
+margin-top:70px;
+margin-bottom:20px;
+}
+
+h3{
+font-size:22px;
+margin-top:40px;
+color:#B03060;
+}
+
+p{
+font-size:18px;
+margin-bottom:22px;
+text-align:justify;
+}
+
+ul{
+margin-left:25px;
+}
+
+li{
+margin-bottom:15px;
+font-size:18px;
+}
+
+.divider{
+width:80px;
+height:4px;
+background:#F4B6C2;
+margin:20px 0 40px 0;
+border-radius:5px;
+}
+
+/* ================= HIGHLIGHT BOX ================= */
+
+.highlight-box{
+background:#FFF0F5;
+padding:30px;
+border-left:5px solid #B03060;
+border-radius:10px;
+margin:40px 0;
+}
+
+/* ================= TABLE ================= */
+
+.table-container{
+overflow-x:auto;
+margin-top:40px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+}
+
+th{
+background:#B03060;
+color:white;
+padding:15px;
+font-size:18px;
+text-align:left;
+}
+
+td{
+padding:15px;
+border-bottom:1px solid #eee;
+font-size:17px;
+vertical-align:top;
+}
+
+tr:nth-child(even){
+background:#FFF7FA;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+text-align:center;
+padding:40px 20px;
+background:white;
+margin-top:80px;
+font-size:15px;
+color:#777;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.topbar{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+.container{
+padding:60px 20px;
+}
+
+h1{
+font-size:30px;
+}
+
+h2{
+font-size:24px;
+}
+
+p, li, td{
+font-size:16px;
+}
+
+}
+
+</style>
 </head>
+<body>
 
-<body class="beranda-page">
-
-<nav class="navbar">
-
-<div class="nav-left">
-<img src="logo.png" class="nav-logo">
-<div>
-<div class="nav-title">Promosi Kesehatan</div>
-<div class="nav-sub">Puskesmas Singosari</div>
+<div class="topbar">
+<div class="logo-area">
+<img src="logo.png" alt="Logo">
+<div>  
+<div class="instansi">Promosi Kesehatan</div>
+  <div class="subinstansi">Puskesmas Singosari</div>
 </div>
 </div>
-
-<div class="nav-menu">
-<a href="beranda.html">Beranda</a>
-<a href="pengertian.html">Pengertian</a>
-<a href="pola-makan.html" class="active">Pola Makan</a>
-<a href="video.html">Video</a>
-<a href="tips.html">Tips</a>
+<a href="beranda.html" class="back-home">← Kembali ke Beranda</a>
 </div>
 
-</nav>
+<div class="container">
 
+<h1>Tabel Menu Makanan Ibu Hamil dan Menyusui</h1>
+<div class="divider"></div>
 
-<section class="menu-section">
+<p class="dropcap">Bunda yang menyusui mungkin sering bertanya-tanya apa diet terbaik tapi tetap mendukung kelancaran menyusui. Beberapa busui merasa khawatir diet mereka tidak cukup baik untuk menghasilkan ASI yang cukup untuk bayi mereka.</p>
 
-<h2>Pola Makan Ibu Hamil & Menyusui</h2>
+<p>Kabar baiknya, Bunda tidak harus mengikuti diet "sempurna" untuk menghasilkan ASI yang kaya nutrisi. Tetapi memicu tubuh Bunda dengan makanan sehat dan beragam masih penting setelah melahirkan.</p>
 
-<div class="menu-box" style="max-width:800px;margin:auto;text-align:left;">
+<p>Memproduksi semua susu itu membutuhkan kalori ekstra. Bahkan, menurut The American College of Obstetricians and Gynecologists, ibu menyusui membutuhkan sekitar 450 hingga 500 kalori tambahan setiap hari.Penting bagi tubuh Bunda yang masih sembuh untuk tetap terhidrasi dan bergizi baik. Bunda membutuhkan lebih banyak air saat menyusui dan penelitian menunjukkan banyak ibu tidak minum cukup untuk tetap terhidrasi.</p>
 
-<p>Makanan yang dianjurkan:</p>
+<div class="highlight-box">
+<p>Ada banyak cara untuk makan sehat dan tidak ada 'satu ukuran cocok untuk semua' ketika datang ke diet menyusui terbaik. Namun, ada beberapa prinsip dasar untuk diikuti yang akan membantu Bunda tetap bergizi baik dan dapat disesuaikan agar sesuai dengan preferensi dan kebutuhan pribadi Bunda. Berikut adalah beberapa tips yang perlu diingat saat memilih nutrisi saat menyusui.</p>
+<h3>1. Tetap Seimbang</h3>
+<p>Diet menyusui terbaik dapat dicapai hanya dengan makan berbagai macam makanan, terutama berbagai sayuran segar, buah -buahan, biji -bijian, protein tanpa lemak, susu, dan lemak sehat.</p>
 
-<ul>
-<li>Sayur hijau</li>
-<li>Buah-buahan</li>
-<li>Ikan dan telur</li>
-<li>Susu</li>
-<li>Kacang-kacangan</li>
-</ul>
-
-<p>Contoh menu sehat:</p>
-
-<ul>
-<li>Breakfast: nasi, telur, sayur</li>
-<li>Lunch: nasi, ayam, sayur, buah</li>
-<li>Dinner: nasi, ikan, sayur</li>
-</ul>
-
+<h3>2. Pertahankan Jadwal Makan Teratur</h3>
+<p>Ibu menyusui juga harus mempertahankan jadwal makan yang teratur. Lakukan yang terbaik untuk tidak melewatkan makan, bahkan ketika berurusan dengan jadwal yang penuh sesak. Sarapan mungkin tampak seperti satu kali makan yang tidak Bunda punya waktu. Sebaliknya, cobalah pilihan yang cepat dan sehat ini:</p>
+<p>Penelitian menunjukkan bahwa kualitas makanan yang Bunda makan penting seperti makan secara teratur, tidak hanya untuk kesehatan fisik tetapi juga untuk kesehatan mental. Jadi, lakukan yang terbaik untuk memicu diri sendiri dengan makanan lezat dan bergizi setiap kali makan.</p>
 </div>
 
-<a href="beranda.html">
-<button class="polamakan-btn">
-Kembali ke beranda
-</button>
-</a>
+<h2>Apa yang perlu dimakan untuk diet menyusui yang bergizi?</h2>
+<p>Mengonsumsi makanan yang seimbang akan memberi bahan bakar pada tubuh untuk memproduksi ASI. Namun, seperti halnya selama kehamilan, ada beberapa nutrisi penting yang perlu Bunda pastikan tercukupi selama menyusui.</p>
 
-</section>
+<h3>1. Asam Folat</h3>
+<p>Mineral ini sangat penting untuk mencegah cacat lahir pada awal kehamilan, namun khasiatnya terus berlanjut hingga bayi Bunda masih bayi dengan mendorong pertumbuhan. Asam folat juga merupakan sahabat hati Bunda. Usahakan untuk mengonsumsi 500 mikrogram setiap hari sedikit kurang dari 600 mikrogram yang Bunda perlukan selama kehamilan.</p>
+
+<h3>2. Multivitamin</h3>
+<p>Berbicara tentang asam folat, konsumsilah multivitamin setiap hari untuk mendapatkan mineral ini, serta nutrisi lain yang Anda dan bayi butuhkan, kata Willow Jarosh, RD, ahli gizi di New York City seperti dikutip dari laman Parents.</p>
+<p>Mengonsumsi multivitamin juga akan membuat Bunda tidak khawatir tentang hari makan yang kurang memuaskan. Jika Bunda akan memiliki bayi lagi di masa depan, beralihlah kembali ke dosis asam folat prenatal ketika Bunda mulai mencoba untuk hamil atau mendapatkan hasil tes positif.</p>
+
+<h2>Berikut ini contoh tabel menu makanan untuk ibu menyusui</h2>
+
+<div class="table-container">
+<table>
+<tr>
+<th>Hari</th>
+<th>Sarapan</th>
+<th>Snack</th>
+<th>Makan Siang</th>
+<th>Snack</th>
+<th>Makan Malam</th>
+</tr>
+
+<tr>
+<td>Senin</td>
+<td>Telur, roti gandum, teh</td>
+<td>Salad buah</td>
+<td>Sop daging, nasi, buah</td>
+<td>Sandwich selai kacang</td>
+<td>Nasi, tumis sayuran, ikan bakar</td>
+</tr>
+
+<tr>
+<td>Selasa</td>
+<td>Susu dan kentang</td>
+<td>Yogurt</td>
+<td>Sop kacang merah, nasi, buah</td>
+<td>Smoothie</td>
+<td>Nasi, tumis brokoli ayam, buah</td>
+</tr>
+
+<tr>
+<td>Rabu</td>
+<td>Sereal dan teh</td>
+<td>Apel</td>
+<td>Nasi, sup salmon, buah</td>
+<td>Salad buah</td>
+<td>Mie sayur, daging teriyaki, alpukat</td>
+</tr>
+
+<tr>
+<td>Kamis</td>
+<td>Bubur ayam, telur, susu</td>
+<td>Kiwi</td>
+<td>Spagheti, salad sayur</td>
+<td>Cake bayam</td>
+<td>Nasi, capcay, pepes ikan</td>
+</tr>
+
+<tr>
+<td>Jumat</td>
+<td>Susu dan roti gandum</td>
+<td>Sandwich sayuran</td>
+<td>Nasi, bening daun katuk, pepes tahu telur</td>
+<td>Salad sayur</td>
+<td>Nasi, tahu daging kuah, buah</td>
+</tr>
+
+</table>
+</div>
+
+<p style="margin-top:40px;"><strong>Semoga informasinya membantu ya, Bunda.</strong></p>
+
+</div>
 
 <footer>
 © 2026 Promosi Kesehatan Puskesmas Singosari
