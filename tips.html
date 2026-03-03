@@ -3,56 +3,271 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tips ASI Eksklusif</title>
-<link rel="stylesheet" href="style.css">
+<title>Produksi ASI Tidak Lancar?</title>
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+body{
+margin:0;
+font-family:'Georgia', serif;
+background:#FAF7F9;
+color:#333;
+line-height:1.9;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar{
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-area img{
+width:45px;
+height:45px;
+}
+
+.instansi{
+font-weight:700;
+font-size:18px;
+color:#C43670;
+}
+
+.subinstansi{
+font-size:13px;
+color:#777;
+}  
+
+.back-home{
+text-decoration:none;
+color:#B03060;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:8px;
+transition:0.3s;
+}
+
+.back-home:hover{
+opacity:0.7;
+}
+
+/* ================= TYPOGRAPHY ================= */
+
+.dropcap::first-letter{
+float:left;
+font-size:60px;
+line-height:45px;
+padding-right:10px;
+color:#B03060;
+font-weight:bold;
+}
+
+h1{
+font-size:40px;
+color:#B03060;
+margin-bottom:10px;
+}
+
+h2{
+font-size:28px;
+color:#B03060;
+margin-top:70px;
+margin-bottom:20px;
+}
+
+h3{
+font-size:22px;
+margin-top:40px;
+color:#B03060;
+}
+
+p{
+font-size:18px;
+margin-bottom:22px;
+text-align:justify;
+}
+
+ul{
+margin-left:25px;
+}
+
+li{
+margin-bottom:15px;
+font-size:18px;
+}
+
+.divider{
+width:80px;
+height:4px;
+background:#F4B6C2;
+margin:20px 0 40px 0;
+border-radius:5px;
+}
+
+/* ================= HIGHLIGHT BOX ================= */
+
+.highlight-box{
+background:#FFF0F5;
+padding:30px;
+border-left:5px solid #B03060;
+border-radius:10px;
+margin:40px 0;
+}
+
+/* ================= BUTTON NEXT ================= */
+
+.next-navigation {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.next-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg,#F283AF,#C43670);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.next-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+text-align:center;
+padding:40px 20px;
+background:white;
+margin-top:80px;
+font-size:15px;
+color:#777;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.topbar{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+.container{
+padding:60px 20px;
+}
+
+h1{
+font-size:30px;
+}
+
+h2{
+font-size:24px;
+}
+
+p, li{
+font-size:16px;
+}
+
+}
+
+</style>
 </head>
+<body>
 
-<body class="beranda-page">
-
-<nav class="navbar">
-
-<div class="nav-left">
-<img src="logo.png" class="nav-logo">
-<div>
-<div class="nav-title">Promosi Kesehatan</div>
-<div class="nav-sub">Puskesmas Singosari</div>
+<div class="topbar">
+<div class="logo-area">
+<img src="logo.png" alt="Logo">
+<div>  
+<div class="instansi">Promosi Kesehatan</div>
+<div class="subinstansi">Puskesmas Singosari</div>
 </div>
 </div>
-
-<div class="nav-menu">
-<a href="beranda.html">Beranda</a>
-<a href="pengertian.html">Pengertian</a>
-<a href="pola-makan.html">Pola Makan</a>
-<a href="video.html">Video</a>
-<a href="tips.html" class="active">Tips</a>
+<a href="beranda.html" class="back-home">← Kembali ke Beranda</a>
 </div>
 
-</nav>
+<div class="container">
 
+<h1>PRODUKSI ASI TIDAK LANCAR</h1>
+<div class="divider"></div>
 
-<section class="menu-section">
+<p class="dropcap">Produksi ASI yang tidak sesuai dengan harapan kerap memicu perasaan bersalah, gagal, bahkan membuat ibu merasa frustasi. Tidak jarang ibu bertanya-tanya, kenapa ASI tidak lancar? Padahal kondisi ini mungkin saja masih tergolong normal, karena pada kebanyakan wanita, produksi ASI setelah melahirkan memang masih sedikit dan baru akan meningkat 2-3 hari kemudian. ASI yang diproduksi pada hari awal ini dikenal dengan kolostrum.</p>
 
-<h2>Tips ASI Eksklusif</h2>
+<p>Namun, memang pada sebagian ibu menyusui bisa terjadi delayed onset of lactation atau ASI telat keluar. Kondisi ini bisa menyebabkan stres, yang menjadi pemicu kegagalan ASI eksklusif. Selain stres, berikut ini adalah beberapa penyebab ASI tidak lancar:</p>
 
-<div class="menu-box" style="max-width:800px;margin:auto;text-align:left;">
+<h2>Faktor Internal</h2>
 
 <ul>
-<li>Susui bayi sesering mungkin</li>
-<li>Konsumsi makanan sehat</li>
-<li>Istirahat cukup</li>
-<li>Hindari stres</li>
-<li>Minum air putih cukup</li>
+<li>Persalinan pertama, umumnya memerlukan waktu lebih lama bagi tubuh ibu untuk beradaptasi, termasuk dengan proses produksi ASI, serta cara menyusui yang tepat untuk bayi.</li>
+<li>Persalinan panjang disertai dengan penyulit membutuhkan energi lebih, sehingga ketersediaan enegeri untuk produksi ASI berkurang.</li>
+<li>Perdarahan hebat saat persalinan, yang dapat menyebabkan tubuh kekurangan cairan dan mengirimkan refleks pada otak yang dapat menurunkan produksi ASI.</li>
+<li>Kondisi medis ibu, termasuk diabetes, tiroid, PCOS, obesitas, dan kanker payudara, akan menyebabkan terganggunya kadar hormon dan menurunkan produksi ASI.</li>
+<li>Efek samping obat-obatan yang dikonsumsi ibu, termasuk pil kontrasepsi atau obat yang mengandung hormonal, obat flu dan obat alergi, dapat memengaruhi keseimbangan hormon yang berujung pada terganggunya produksi ASI.</li>
 </ul>
 
+<h2>Faktor Eksternal</h2>
+
+<ul>
+<li>Telat atau tidak melakukan inisiasi menyusui dini, akan menghambat produksi ASI dan menunda munculnya refleks menyusu bayi serta keterampilannya untuk menyusu</li>
+<li>Bayi sulit menyusu, bisa karena bingung puting karena penggunaan dot, maupun adanya kelainan anatomi yang dialami bayi, seperti tongue tie.</li>
+<li>Frekuensi menyusui kurang, karena pemberian susu formula, bisa saja menyebabkan produksi ASI berkurang karena proses pengosongan tidak berjalan lancar.</li>
+<li>Stres dan kecemasan akan produksi ASI yang tidak mencukupi, serta memiliki sugesti bahwa suplai ASI kurang akan makin menurunkan produksi makanan utama bayi ini</li>
+<li>Asupan nutrisi ibu menyusui tidak sesuai, akan membuat tubuh tidak dapat memproduksi cukup ASI bagi bayi</li>
+</ul>
+
+<div class="highlight-box">
+<h3>Apa yang Harus Dilakukan Jika ASI Tidak Lancar?</h3>
+<p>Jika ASI tidak lancar, tetaplah tenang dan fokus pada frekuensi menyusui bayi. Semakin sering bayi menyusu, semakin banyak stimulasi untuk memperlancar produksi ASI. Pastikan posisi menyusui benar dan bayi melekat dengan baik. Selain itu, pastikan Anda tetap terhidrasi, hindari stres, cukupi kebutuhan nutrisi harian, dan istirahatlah dengan cukup.  Jika masalah terus berlanjut, konsultasikan dengan konsultan laktasi untuk mendapatkan saran dan bantuan lebih lanjut.</p>
 </div>
 
-<a href="beranda.html">
-<button class="tips-btn">
-Kembali ke beranda
-</button>
-</a>
+<h2>Bagaimana Cara Melancarkan ASI Kembali?</h2>
 
-</section>
+<p>Untuk melancarkan ASI kembali, tingkatkan frekuensi menyusui bayi dan hindari stres berlebih. Selain itu, Anda juga disarankan untuk mengonsumsi makanan bergizi dan memenuhi kebutuhan cairan dengan minum air. Pijatan lembut pada payudara juga dapat membantu merangsang produksi dan memperlancar aliran ASI.</p>
+
+<h2>Minum Apa Agar ASI Lancar?</h2>
+
+<p>Agar ASI lancar, minumlah air putih yang cukup agar tubuh terhidrasi dengan baik. Susu khusus untuk ibu menyusui yang mengandung vitamin dan mineral penting juga bisa menjadi pilihan untuk membantu memperlancar produksi ASI</p>
+
+<h2>Makan Apa Agar ASI Lancar?</h2>
+
+<p>Agar ASI lancar, Anda disarankan untuk mengonsumsi makanan kaya nutrisi seperti daun katuk, bayam, ikan, telur, ayam, dan kacang-kacangan. Makanan tinggi asam lemak omega-3, seperti salmon dan biji chia, juga disarankan sebab dapat meningkatkan kualitas ASI.</p>
+
+<div class="next-navigation">
+<a href="tips-kedua.html" class="next-btn">
+Lanjut ke Tips Selanjutnya →
+</a>
+</div>
+
+</div>
 
 <footer>
 © 2026 Promosi Kesehatan Puskesmas Singosari
