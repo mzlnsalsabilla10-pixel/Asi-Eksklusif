@@ -3,58 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Video Edukasi</title>
-<link rel="stylesheet" href="style.css">
+<title>Video Edukasi ASI Eksklusif</title>
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+body{
+margin:0;
+font-family:'Georgia', serif;
+background:#FAF7F9;
+color:#333;
+line-height:1.9;
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar{
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-area img{
+width:45px;
+height:45px;
+}
+
+.instansi{
+font-weight:700;
+font-size:18px;
+color:#C43670;
+}
+
+.subinstansi{
+font-size:13px;
+color:#777;
+}  
+
+.back-home{
+text-decoration:none;
+color:#B03060;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:8px;
+transition:0.3s;
+}
+
+.back-home:hover{
+opacity:0.7;
+}
+
+/* ================= CONTENT ================= */
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+.content-area{
+max-width:850px;
+margin:auto;
+text-align:center;
+}
+
+.content-area h1{
+font-size:32px;
+color:#C43670;
+margin-bottom:15px;
+}
+
+.video-description{
+font-size:16px;
+margin-bottom:40px;
+color:#555;
+}
+
+/* ================= VIDEO STYLE ================= */
+
+.video-wrapper{
+position:relative;
+padding-bottom:56.25%; /* 16:9 ratio */
+height:0;
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(196,54,112,0.15);
+background:#000;
+}
+
+.video-wrapper video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:15px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.topbar{
+flex-direction:column;
+gap:10px;
+text-align:center;
+}
+
+.container{
+padding:50px 20px;
+}
+
+.content-area h1{
+font-size:26px;
+}
+
+}
+
+</style>
 </head>
 
-<body class="beranda-page">
+<body>
 
-<nav class="navbar">
+<!-- ================= TOPBAR ================= -->
 
-<div class="nav-left">
-<img src="logo.png" class="nav-logo">
-<div>
-<div class="nav-title">Promosi Kesehatan</div>
-<div class="nav-sub">Puskesmas Singosari</div>
+<div class="topbar">
+<div class="logo-area">
+<img src="logo.png" alt="Logo">
+<div>  
+<div class="instansi">Promosi Kesehatan</div>
+<div class="subinstansi">Puskesmas Singosari</div>
 </div>
 </div>
-
-<div class="nav-menu">
-<a href="beranda.html">Beranda</a>
-<a href="pengertian.html">Pengertian</a>
-<a href="pola-makan.html">Pola Makan</a>
-<a href="video.html" class="active">Video</a>
-<a href="tips.html">Tips</a>
+<a href="beranda.html" class="back-home">← Kembali ke Beranda</a>
 </div>
 
-</nav>
+<!-- ================= CONTENT ================= -->
 
+<div class="container">
+<div class="content-area">
 
-<section class="menu-section">
+<h1>Video Edukasi tentang Pentingnya ASI Eksklusif</h1>
 
-<h2>Video Edukasi ASI Eksklusif</h2>
-
-<div class="menu-box" style="max-width:800px;margin:auto;">
-
-<video width="100%" controls>
+<div class="video-wrapper">
+<video controls>
 <source src="video.mp4" type="video/mp4">
+Browser Anda tidak mendukung pemutaran video.
 </video>
-
-<p>Video edukasi tentang pentingnya ASI Eksklusif</p>
-
 </div>
 
-<a href="beranda.html">
-<button class="video-btn">
-Kembali ke beranda
-</button>
-</a>
-
-</section>
-
-<footer>
-© 2026 Promosi Kesehatan Puskesmas Singosari
-</footer>
+</div>
+</div>
 
 </body>
 </html>
