@@ -28,17 +28,17 @@
         </button>
 
 <div class="wa-list" id="waList">
-            <a href="https://wa.me/6281111111111" target="_blank">
+            <a href="https://wa.me/6281233460830" target="_blank">
                 <strong>Bidan Koordinator</strong><br>
                 <span>Chat Sekarang</span>
             </a>
 
-            <a href="https://wa.me/6282222222222" target="_blank">
+            <a href="https://wa.me/6281235603006" target="_blank">
                 <strong>Ahli Gizi</strong><br>
                 <span>Chat Sekarang</span>
             </a>
 
-            <a href="https://wa.me/6283333333333" target="_blank">
+            <a href="https://wa.me/6281232290252" target="_blank">
                 <strong>Puskesmas</strong><br>
                 <span>Chat Sekarang</span>
             </a>
@@ -140,19 +140,21 @@ Dapatkan berbagai tips praktis untuk keberhasilan ASI Eksklusif.
 </footer>
 
 <script>
-function toggleWA(){
+function toggleWA(event){
+    event.stopPropagation();
     document.getElementById("waList").classList.toggle("show");
 }
 
-window.onclick = function(event){
-    if (!event.target.closest('.wa-dropdown')){
+document.addEventListener("click", function(e){
+    if(!e.target.closest(".wa-dropdown")){
         document.getElementById("waList").classList.remove("show");
     }
-}
+});
 </script>
 
 </body>
 </html>
+
 
 
 
