@@ -238,12 +238,11 @@ box-sizing:border-box;
 
 .menu-grid{
 display:grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+grid-template-columns: repeat(auto-fit, 280px); /* FIXED WIDTH */
+justify-content:center;  /* INI YANG BIKIN TENGAH */
 gap:40px;
 
-max-width:1100px;   /* BATAS LEBAR */
-margin:60px auto 0; /* INI bikin ke tengah */
-padding:0 20px;     /* Biar gak mepet layar */
+margin:60px auto 0;
 }
 
 
@@ -775,5 +774,6 @@ transition:0.25s;
 transform:scale(1.05);
 
 }
+
 
 
