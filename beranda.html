@@ -141,18 +141,23 @@ Dapatkan berbagai tips praktis untuk keberhasilan ASI Eksklusif.
 
 <script>
 function toggleWA(){
-    document.getElementById("waList").classList.toggle("show");
+    const list = document.getElementById("waList");
+    list.classList.toggle("show");
 }
 
 document.addEventListener("click", function(e){
-    if(!e.target.closest(".wa-dropdown")){
-        document.getElementById("waList").classList.remove("show");
+    const dropdown = document.querySelector(".wa-dropdown");
+    const list = document.getElementById("waList");
+
+    if (!dropdown.contains(e.target)) {
+        list.classList.remove("show");
     }
 });
 </script>
 
 </body>
 </html>
+
 
 
 
