@@ -220,13 +220,9 @@ min-height:100vh;
 
 .menu-section{
 
-padding:80px 0;
+padding:80px 20px;
 
 text-align:center;
-
-max-width:1200px;
-
-margin:auto;
 
 box-sizing:border-box;
 
@@ -241,8 +237,7 @@ display:grid;
 grid-template-columns: repeat(auto-fit, 280px); /* FIXED WIDTH */
 justify-content:center;  /* INI YANG BIKIN TENGAH */
 gap:40px;
-
-margin:60px auto 0;
+margin-top:60px;
 }
 
 
@@ -774,6 +769,7 @@ transition:0.25s;
 transform:scale(1.05);
 
 }
+
 
 
 
