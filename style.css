@@ -237,17 +237,12 @@ box-sizing:border-box;
 /* ================= GRID ================= */
 
 .menu-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
+display:flex;
+justify-content:center;   /* INI bikin box ke tengah */
 gap:40px;
-
-margin-top:30px;
-
-box-sizing:border-box;
-
+flex-wrap:wrap;
+max-width:1200px;         /* Biar nggak terlalu melebar */
+margin:60px auto 0 auto;  /* Biar sectionnya ikut center */
 }
 
 
@@ -779,3 +774,4 @@ transition:0.25s;
 transform:scale(1.05);
 
 }
+
